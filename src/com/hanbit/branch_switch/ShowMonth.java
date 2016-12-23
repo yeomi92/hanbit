@@ -4,7 +4,7 @@ import java.util.Scanner;
 @FILE  : ShowMonth.java
 @DATE  : 2016. 12. 23.
 @AUTHOR: Yeom Hye-Seon
-@STORY :
+@STORY : 
  */
 public class ShowMonth {
 	public static void main(String[] args) {
@@ -22,7 +22,14 @@ public class ShowMonth {
 			day=30;
 			break;
 		case 2:
-			if(year%400==0){
+			if(year%4==0&&year%100!=0){
+				day=29;
+			}else if(year%4==0&&year%100==0&&year%400==0){
+				day=29;
+			}else{
+				day=28;
+			}
+			/*if(year%400==0){
 				day=29;
 			}else if(year%100==0){
 				day=28;
@@ -30,7 +37,7 @@ public class ShowMonth {
 				day=29;
 			}else{
 				day=28;
-			}
+			}*/
 			break;
 		default:
 			System.out.println("잘못입력하셨습니다.");
