@@ -16,6 +16,6 @@ public class SeriesThreeToTen {
 			}
 			num=num+1;
 		}
-		System.out.println(sum);
+		System.out.printf("%d",sum);
 	}
 }

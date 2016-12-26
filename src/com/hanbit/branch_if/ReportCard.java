@@ -29,9 +29,9 @@ public class ReportCard {
 			grade = 'D';
 		}
 		
-		System.out.println("Name:" + name);
-		System.out.println("Total:" + total);
-		System.out.println("Average:" + average);
-		System.out.println("Grade: " + grade);
+		System.out.printf("Name: %s\n",name);
+		System.out.printf("Total: %d\n",total);
+		System.out.printf("Average: %d\n",average);
+		System.out.printf("Grade: %c",grade);
 	}
 }

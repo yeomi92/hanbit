@@ -26,18 +26,18 @@ public class TimeCalc {
 				m = sec / 60;
 				sec = sec % 60;
 				s = sec;
-				System.out.println(h + "시간" + m + "분" + s + "초");
+				System.out.printf("%d시간 %d분 %d초",h,m,s);
 			}else{
 				s= sec;
-				System.out.println(h + "시간"+ s + "초");
+				System.out.printf("%d시간 %d초",h,s);
 			}
 		} else if (sec >= 60) {
 			m = sec / 60;
 			sec = sec % 60;
 			s = sec;
-			System.out.println(m + "분" + s + "초");
+			System.out.printf("%d분 %d초",m,s);
 		} else {
-			System.out.println(sec + "초");
+			System.out.printf("%d초",s);
 		}
 
 		// 나머지를 완성하세요

@@ -33,6 +33,6 @@ public class LeapYear {
 		}else{
 			result="평년";
 		}
-		System.out.println(year+"년은 "+result+"입니다.");
+		System.out.printf("%d년은 %s입니다.",year,result);
 	}
 }

@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Test2 {
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("누구세요?");
-		System.out.println("내 이름은~~ "+scanner.next()+"입니다~~");
+		System.out.printf("누구세요?");
+		System.out.printf("내 이름은 %s입니다.",scanner.next());
 	}
 }

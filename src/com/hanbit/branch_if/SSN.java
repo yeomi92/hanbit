@@ -24,6 +24,6 @@ public class SSN {
 			System.out.println("다시 입력하세요.");
 		}
 		
-		System.out.println(gender + "입니다.");
+		System.out.printf("%s%s",gender,"입니다.");
 	}
 }

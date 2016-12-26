@@ -26,6 +26,6 @@ public class Calculator{
 			System.out.println("잘못입력하셨습니다.");
 			return;
 		}
-		System.out.print("Result: "+result);
+		System.out.printf("Result: %d",result);
 	}
 }

@@ -34,7 +34,7 @@ public class BMI {
 		} else {
 			result = "저체중";
 		}
-		System.out.println("BMI 지수: " + bmi);
+		System.out.printf("BMI 지수: %f\n",bmi);
 		System.out.println(result);
 	}
 }

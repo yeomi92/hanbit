@@ -40,6 +40,6 @@ public class WhatisBigNumAmong3Numbers {
 				n3=a;
 			}
 		}	
-		System.out.println("큰 값부터 작은 값 순으로 나열: " + n1+" "+n2+" "+n3);
+		System.out.printf("큰 값부터 작은 값 순으로 나열: %d, %d, %d",n1,n2,n3);
 	}
 }

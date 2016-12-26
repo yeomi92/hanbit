@@ -15,6 +15,6 @@ public class SeriesOneToFive {
 			num=num+1;  
 		}
 		//sum=1+2+3+4+5;
-		System.out.println("합은 "+sum+"이다.");
+		System.out.printf("합은 %d이다.",sum);
 	}
 }

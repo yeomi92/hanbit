@@ -10,13 +10,13 @@ public class SeriesInput {
 	public static void main(String[] args) {
 		Scanner s= new Scanner(System.in);
 		int num=0, sum=0;
-		System.out.println("If you want to stop, Type -1");
+		System.out.printf("If you want to stop, Type -1\n");
 		while(true){
-			System.out.print("Type Number:");
+			System.out.printf("Type Number:");
 			num=s.nextInt();
 			if(num==-1){break;}
 			sum=sum+num;
 		}
-		System.out.println(sum);
+		System.out.printf("%d",sum);
 	}
 }
