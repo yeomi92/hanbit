@@ -11,9 +11,9 @@ public class FindTheSumOf5Numbers {
 		Scanner s = new Scanner(System.in);
 		int sum=0, count=0;
 		while(count<5){
-		System.out.println("Enter n");
-		sum+=s.nextInt();
-		count+=1;
+			System.out.println("Enter n");
+			sum+=s.nextInt();
+			count+=1;
 		}
 		System.out.println(sum);
 	}

@@ -3,7 +3,7 @@ package com.hanbit.series;
 public class SeriesSwitch {
 	public static void main(String[] args) {
 		int i=0, sum=0, sw=0;
-		while(true){
+		/*while(true){
 			i++;
 			if(i%2==0){
 				sw=-1;
@@ -12,6 +12,13 @@ public class SeriesSwitch {
 			}	
 			sum+=sw*i;
 			if(i==100){break;}
+		}*/
+		while(i<100){
+			i++;
+			if(i%2==0){
+				sw=-1;
+				sum+=sw;
+			}
 		}
 		System.out.printf(
 				 "=================================================\n"
