@@ -1,4 +1,4 @@
-package com.hanbit.loop_for;
+package com.hanbit.series;
 import java.util.Scanner;
 /**
 @FILE  : Fibonacci.java
@@ -8,9 +8,13 @@ import java.util.Scanner;
  */
 public class Fibonacci{
 	public static void main(String[] args) {
-		//1, 1, 2, 3, 5, 8, 13, 21, 34, 55의 합
+		//1, 1, 2, 3, 5, 8, 13, 21, 34, 55의 합\
+		Scanner s= new Scanner(System.in);
 		int a=1, b=1, c=2, sum=2;
-		for(int i=3;i<=10;i++){
+		int num=0;
+		System.out.println("num:");
+		num=s.nextInt();
+		for(int i=3;i<=num;i++){
 			c=a+b;
 			a=b;
 			b=c;
