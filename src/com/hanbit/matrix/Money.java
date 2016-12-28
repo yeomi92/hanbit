@@ -27,19 +27,19 @@ public class Money {
 	        System. out.println( "금액을 입력하세요" );
 	        Scanner s=new Scanner(System. in);
 	        int money=s.nextInt();
-	        int[] moneyUnit={50000,10000,5000, 1000, 500, 100, 50, 10 };
-	        int mok = 0;
-	        int nmg = 0;
+	        int[] moneyUnit={50000,10000,5000,1000,500,100,50,10};
+	        int mok=0;
+	        int nmg=0;
 	        String won="";
 	        System. out.printf("요청금액 : %d원\n",money);
-	        for (int i = 0; i < moneyUnit.length; i++) {
+	        for(int i=0;i<moneyUnit.length;i++){
 	        	mok=money/moneyUnit[i];
 	        	nmg=money%moneyUnit[i];
 	        	money=nmg;
 	        	switch(i){
 	        	case 0:case 1: won=moneyUnit[i]/10000+"만원"; break;
 	        	case 2:case 3: won=moneyUnit[i]/1000+"천원"; break;
-	        	case 4: won=moneyUnit[i]/100+"백원;"; break;
+	        	case 4: won=moneyUnit[i]/100+"백원"; break;
 	        	case 5: won="백원"; break;
 	        	case 6: won="오십원"; break;
 	        	case 7: won="십원"; break;
