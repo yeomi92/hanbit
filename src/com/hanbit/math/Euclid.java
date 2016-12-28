@@ -34,8 +34,8 @@ public class Euclid {
             	  if(nmg==0){
             		  break;
             	  }
-            	  small=nmg;
             	  big=small;
+            	  small=nmg;
              }
              gcd=small;
              lcm=(a*b)/gcd;
