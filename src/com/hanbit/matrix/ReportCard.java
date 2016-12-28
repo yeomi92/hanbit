@@ -20,7 +20,6 @@ public class ReportCard {
 		for(i=0;i<arrStr.length;i++){
 			subjectStr+=(i==(arrStr.length-1))?arrStr[i]:arrStr[i]+"\t";
 		}
-		//System.out.println("Score:");
 		for(i=0;i<arr.length;i++){
 			System.out.printf("%s Score:",arrStr[i+1]);
 			arr[i]=s.nextInt();
@@ -42,6 +41,7 @@ public class ReportCard {
 				+ "%s\n"
 				+ "------------------------------------------------------------\n"
 				+ "%s\t%s%d\t%c\n"
-				+ "============================================================\n",subjectStr,name,scoreStr,average,grade);
+				+ "============================================================\n"
+				,subjectStr,name,scoreStr,average,grade);
 	}
 }
