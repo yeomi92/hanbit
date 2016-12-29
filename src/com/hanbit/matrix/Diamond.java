@@ -16,8 +16,15 @@ public class Diamond {
         int[][] arr = new int[ col][ row];
         start=3; //열의 시작 위치
         end=3; //열의 끝 위치
-
-
+        for(col=0;col<arr.length;col++){
+        	for(row=0;row<arr[col].length;row++){
+        		arr[col][row]=0;
+        		if(){
+        			arr[col][row]=(val+=1);
+        		}
+        		System.out.print(arr[col][row]);
+        	}
+        	System.out.println("");
+        }
     }
-
 }
