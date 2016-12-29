@@ -22,9 +22,14 @@ public class ReportCard {
 		}
 		for(i=0;i<arr.length;i++){
 			System.out.printf("%s Score:",arrStr[i+1]);
-			arr[i]=s.nextInt();
-			total+=arr[i];
-			scoreStr+=arr[i]+"\t";
+			arr[i]=s.nextInt();			
+			if(arr[i]<0||arr[i]>100){
+				System.out.println("점수범위를 넘습니다. 다시 입력하세요.");
+				i--;
+			}else{
+				total+=arr[i];
+				scoreStr+=arr[i]+"\t";
+			}
 		}
 		average=total/arr.length;
 		switch(average/10){
@@ -40,7 +45,7 @@ public class ReportCard {
 		System.out.printf("============================================================\n"
 				+ "%s\n"
 				+ "------------------------------------------------------------\n"
-				+ "%s\t%s%d\t%c\n"
+				+ "%s\t%s%d\t %c\n"
 				+ "============================================================\n"
 				,subjectStr,name,scoreStr,average,grade);
 	}
