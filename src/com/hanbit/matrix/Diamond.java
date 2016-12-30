@@ -18,12 +18,14 @@ public class Diamond {
         end=3; //열의 끝 위치
         for(int i=0;i<arr.length;i++){
          for(int j=0;j<arr[i].length;j++){
-          if(i==2||j==2||i+j==4&&Math.abs(i-j)==2||i==j&&i==1||i==j&&i==3){
-           val++;
-           arr[i][j]=val; 
-          }else{
-           arr[i][j]=0; 
-          }
+        	 arr[i][j]=(j>=start-1&&j<=end-1)?++val:0;
+        	 if(i<2&&j==arr[i].length-1){
+    			 start--;
+    			 end++;
+    		 }else if(i>1&&j==arr[i].length-1){
+    			 start++;
+    			 end--;
+    		 }
           System.out.printf("%2d\t",arr[i][j]);
          }
          System.out.println("");

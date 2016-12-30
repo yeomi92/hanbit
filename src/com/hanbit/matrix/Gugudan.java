@@ -8,7 +8,7 @@ package com.hanbit.matrix;
 public class Gugudan {
 	public static void main(String[] args) {
 		int i=0,j=0;
-			for(i=1;i<20;i++){
+			for(i=1;i<19;i++){
 				for(j=2;j<6;j++){
 					System.out.print((i>9)?(j+4)+"X"+(i-9)+"="+(i-9)*(j+4)+"\t":j+"X"+i+"="+i*j+"\t");
 				}
