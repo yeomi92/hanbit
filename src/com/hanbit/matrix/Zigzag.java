@@ -6,7 +6,7 @@ import java.util.Scanner;
 @FILE  : Zigzag.java
 @DATE  : 2016. 12. 29.
 @AUTHOR: Yeom Hye-Seon
-@STORY :
+@STORY : 숫자를 입력받아서 지그재그로 숫자 출력
  1   2   3   4   5
 10   9   8   7   6
 11  12  13  14  15
@@ -38,5 +38,4 @@ public class Zigzag {
         	System.out.println("");
         }
     }
-
 }
