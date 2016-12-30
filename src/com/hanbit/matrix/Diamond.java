@@ -10,7 +10,7 @@ import java.util.Scanner;
 5    6    7    8    9   
 0   10   11   12    0   
 0    0   13    0    0
-**/
+* */
 public class Diamond {
 	public static void main(String[] args) {
         int len=0, val=0, start=0, end=0; //배열에 저장할 변수int[][] arr = new int[col][row];
@@ -35,6 +35,5 @@ public class Diamond {
          }
          System.out.println("");
         }
-        //daimond
     }
 }
