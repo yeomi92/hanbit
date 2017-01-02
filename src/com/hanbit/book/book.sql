@@ -3,6 +3,28 @@ select * from book;
 select * from custmer;
 select * from orders;
 
+-- 스키마 생성, 논리적 설계 단계
+CREATE TABLE Book (
+  bookid      NUMBER(2) PRIMARY KEY,
+  bookname    VARCHAR2(40),
+  publisher   VARCHAR2(40),
+  price       NUMBER(8)
+);
+CREATE TABLE  Customer (
+  custid      NUMBER(2) PRIMARY KEY, 
+  name        VARCHAR2(40),
+  address     VARCHAR2(50),
+  phone       VARCHAR2(20)
+);
+CREATE TABLE Orders (
+  orderid NUMBER(2) PRIMARY KEY,
+  custid  NUMBER(2) REFERENCES Customer(custid),
+  bookid  NUMBER(2) REFERENCES Book(bookid),
+  saleprice NUMBER(8) ,
+  orderdate DATE
+);
+
+-- 물리적 설계 단계(실질적인 값이 들어오기 때문에)
 -- Book, Customer, Orders 데이터 생성
 INSERT INTO Book VALUES(1, '축구의 역사', '굿스포츠', 7000);
 INSERT INTO Book VALUES(2, '축구아는 여자', '나무수', 13000);
