@@ -28,6 +28,7 @@ public class Diamond {
     		 }
           System.out.printf("%2d\t",arr[i][j]);
          }
+         // 123456
          System.out.println("");
         }
     }
