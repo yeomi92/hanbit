@@ -52,7 +52,16 @@ update orders set count=12 where orderid=8;
 update orders set count=7 where orderid=9;
 update orders set count=13 where orderid=10;
 
-select distinct t.custid, c1.name, t.total 
+select sum(sum(o1.count*b1.price) t.total*-1)
+from CUSTOMER c1, BOOK b1, ORDERS o1,
+(select sum(b.price*o.count)*0.5 total, c.custid
+from CUSTOMER c, ORDERS o, BOOK b
+where c.custid=o.custid and b.bookid=o.bookid and (c.name='김연아' or c.name='장미란')) t
+where c1.custid=o1.custid and b1.bookid=o1.bookid;
+
+select trunc(sum(case when t.custid=2 then t.total/2 
+when t.custid=3 then t.total/2 
+else t.total end),-4) totalsales
 from customer c1,
 (select distinct c.custid, nvl(sum(b.price*count),0) total
 from orders o 
@@ -65,3 +74,8 @@ group by c.custid
 order by custid asc) t
 where c1.custid=t.custid
 order by t.custid;
+
+select sum(o.count*b.price)
+from CUSTOMER c, BOOK b, ORDERS o
+where c.custid=o.custid and o.bookid=b.bookid;
+
