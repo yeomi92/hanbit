@@ -1,8 +1,10 @@
+-- 1
 -- 김연아가 산 책은?
 select b.bookname
 from CUSTOMER c, ORDERS o, BOOK b
 where c.custid=o.custid and b.bookid=o.bookid and c.name='김연아';
 
+-- 2
 -- 박지성이 산 책의 값은?
 select sum(b.price*o.count) total
 from CUSTOMER c, ORDERS o, BOOK b
