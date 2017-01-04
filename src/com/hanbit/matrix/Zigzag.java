@@ -1,10 +1,16 @@
 package com.hanbit.matrix;
+<<<<<<< HEAD
 import java.util.Scanner;
+=======
+
+import java.util.Scanner;
+
+>>>>>>> c217c0c555f429e6f7ba8009f2006f6bae36f6f6
 /**
 @FILE  : Zigzag.java
 @DATE  : 2016. 12. 29.
 @AUTHOR: Yeom Hye-Seon
-@STORY :
+@STORY : 숫자를 입력받아서 지그재그로 숫자 출력
  1   2   3   4   5
 10   9   8   7   6
 11  12  13  14  15
@@ -14,7 +20,11 @@ import java.util.Scanner;
 public class Zigzag {
 	public static void main(String[] args) {
 		Scanner s = new Scanner(System.in);
+<<<<<<< HEAD
         int length = 0; // 배열 길이
+=======
+        int length = 5; // 배열 길이
+>>>>>>> c217c0c555f429e6f7ba8009f2006f6bae36f6f6
         System.out.print("Num: ");
         length=s.nextInt();
         System.out.printf("%d X %d\n",length,length);
@@ -36,5 +46,4 @@ public class Zigzag {
         	System.out.println("");
         }
     }
-
 }
