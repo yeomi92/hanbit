@@ -19,7 +19,7 @@ select sum(b.price*o.count)*0.5 total
 from CUSTOMER c, ORDERS o, BOOK b
 where c.custid=o.custid and b.bookid=o.bookid and (c.name='김연아' or c.name='장미란');
 
--- (총 매출 구해라 10000원 이하 절삭)
+-- 총 매출 구해라 (10000원 이하 절삭)
 select floor(sum(b.price*o.count)/10000)*10000 total
 from CUSTOMER c, ORDERS o, BOOK b
 where c.custid=o.custid and b.bookid=o.bookid;
