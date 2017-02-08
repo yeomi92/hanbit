@@ -162,3 +162,4 @@ INSERT INTO CHARTS(chart_id,treat_id,doc_id,pat_id,nur_id,chart_contents)
 VALUES('s_140303003',140303003,091001,4234,130211,'입원치료');
 INSERT INTO CHARTS(chart_id,treat_id,doc_id,pat_id,nur_id,chart_contents)
 VALUES('s_140308087',140308087,062019,7643,071018,'장염 입원치료');
+select * from PATIENTS;

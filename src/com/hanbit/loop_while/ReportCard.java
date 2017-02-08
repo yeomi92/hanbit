@@ -16,10 +16,10 @@ public class ReportCard {
 		System.out.printf("Name:");
 		name = s.next();
 		while(subjectNum<6){
-		subjectNum++;
-		System.out.printf("Score:");
-		score = s.nextInt();
-		total+=score;
+			subjectNum++;
+			System.out.printf("Score:");
+			score = s.nextInt();
+			total+=score;
 		}
 		average = total / subjectNum;
 		if(average >=90){
